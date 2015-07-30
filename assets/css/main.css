@@ -1,0 +1,141 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 30, 2015, 11:57:42 AM
+    Author     : meghashettar
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+.clearfix:after{
+    content:".";
+    height: 0px;
+    display: box;
+    visibility: hidden;
+    font-size: 0;
+    clear: both;
+}
+
+body{
+    background-color: #f5f8fa;
+}
+
+img{border-radius: 5px;}
+
+h1{
+    font-size: 14px;
+    line-height: 14px;
+    
+}
+
+h2{
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.smaller-text{
+    color: #777; font-size: 12px;
+}
+
+.title{
+    position: absolute;
+    left: 45%;
+    top:5px;
+}
+
+.topNav{
+    background-color: #fff; box-shadow: 0px 3px 5px #888888; height: 50px; box-sizing: border-box;
+}
+.topNav li{
+    float:left; list-style-type: none; margin: 15px; 
+}
+#search {
+    background-color: #f9fcfd; float:right; border: 1px solid #ccc; border-radius: 40px; padding: 5px 20px; box-sizing: border-box; margin: 10px;
+}
+
+#left-dashboard,
+#content-main,
+#right-dashboard{
+    
+}
+
+#left-dashboard .contentarea,
+#content-main .contentarea,
+#right-dashboard .contentarea{
+    margin: 20px 10px;
+    border: 1px solid #E1E8ED;
+    min-height: 200px;
+    border-radius: 5px 5px 0 0;
+    background-color: #fff; 
+}
+
+#left-dashboard{
+   margin-left: 2.3%;
+}
+
+
+#content-main{
+    margin-left: 0;
+}
+.tweet-box {
+    background-color: #E5F2F7; 
+    border-radius: 5px 5px 0 0;
+}
+
+
+#right-dashboard{
+    margin-left: 0;
+}
+
+.profile-image{
+    float: left; 
+    margin: 10px;
+}
+.profile-image img{
+    height: 73px;
+    width: 73px;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    position: relative;
+    top: -30px;
+    margin-left: 10px;
+    
+}
+
+.profile-name{
+    float: left; 
+    margin: 10px 0;     
+}
+
+#tweet-list{
+    padding: 0;
+    margin: 0;
+}
+#tweet-list li{
+    list-style-type: none;
+    border-bottom: 1px solid #E1E8ED;
+    padding: 10px 0;
+}
+#tweet-list li:hover{
+    background-color: #E5F2F7; 
+}
+
+.tweet-user-img{
+    float: left; 
+    margin: 14px 0 15px 15px;
+}
+
+#tweet-list .smaller-text.retweet{
+    margin: 0px 0 0 58px;
+    display:list-item;
+    list-style-type: square;
+}
