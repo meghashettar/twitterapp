@@ -1,8 +1,11 @@
 var scrollLoads = 0;
-var numItemsToLoad = 3;
+var numItemsToLoad = 5;
 
 $(document).ready(function(){
     $(window).scroll(function() {   
+    if($(window).scrollTop() == 0 && scrollLoads > 2) {
+        location.reload(); 
+    }
     if($(window).scrollTop() + $(window).height() == $(document).height()) {
         getdata(numItemsToLoad);
     }
